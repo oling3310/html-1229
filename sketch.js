@@ -1,4 +1,3 @@
-// By Roni Kaufman
 
 let t = 0;
 let step = 0.01;
@@ -9,8 +8,6 @@ let radiusDist = [];
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  var canvas = createCanvas(600, 200);
-  canvas.parent('abc');
   colorMode(HSB, 1);
   noStroke();
   
@@ -24,6 +21,9 @@ function setup() {
   radiusDist.length = n;
   radiusDist.fill(size);
 }
+
+  var canvas = createCanvas(500, 500);
+  canvas.parent('abc');
 
 function draw() {
   background(0.98);
